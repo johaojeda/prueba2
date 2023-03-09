@@ -1,11 +1,11 @@
-name: Hola mundo
+name: Hola mundo prueba 2
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   Mi-primer-job:
-    name: Mi primer job
-    runs-on: ubuntu-latest
+    name: Mi primer job prueba 2
+    runs-on: windows-latest
     outputs:
       salida: ${{ steps.imprimir.outputs.respuesta }}
     steps:
@@ -18,7 +18,7 @@ jobs:
   Mi-segundo-job:
     needs: Mi-primer-job
     name: Mi segundo job
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - name: Imprimir
       id: imprimir
