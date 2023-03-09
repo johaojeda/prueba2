@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 jobs:
   Mi-primer-job:
-    name: Mi primer job prueba 2
+    name: Mi primer job 
     runs-on: windows-latest
     outputs:
       salida: ${{ steps.imprimir.outputs.respuesta }}
