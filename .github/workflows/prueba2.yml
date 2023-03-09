@@ -22,4 +22,4 @@ jobs:
     steps:
     - name: Imprimir
       id: imprimir
-      run: echo ${{needs.Mi-primer-job.outputs.salida}}
+      run: echo "${{needs.Mi-primer-job.outputs.salida}}"
