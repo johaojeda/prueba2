@@ -2,6 +2,7 @@ name: Hola mundo prueba 2
 on:
   push:
     branches: [ main ]
+
 jobs:
   job1:
     name: Pruebas
@@ -12,7 +13,7 @@ jobs:
     - name: Configuración de entorno de python
       uses: actions/setup-python@v2
       with:
-          python-version: '3.9'
+          python-version: '3.7'
     - name: Correr pruebas
       id: correr-pruebas
       run: python -m unittest -v tests/test_persona.py
