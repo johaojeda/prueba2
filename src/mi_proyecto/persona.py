@@ -1,6 +1,6 @@
 import datetime
 #from Comunidad.base import Session, engine, Base
-from sqlalchemy import Column, Integer, String
+#from sqlalchemy import Column, Integer, String
 
 
 class Persona:
